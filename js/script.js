@@ -29,21 +29,25 @@ function myButtonClicked() {
       addedNumber = addedNumber + 1;
       answer = answer + counter1;
     }
+      
   } else if (counter1 < 0 && counter2 < 0) {
     while (addedNumber > counter2) {
       addedNumber = addedNumber - 1;
       answer = answer - counter1;
     }
+      
   } else if (counter1 > 0 && counter2 < 0) {
     while (addedNumber > counter2) {
       addedNumber = addedNumber - 1;
       answer = answer - counter1;
     }
+      
   } else if (counter1 < 0 && counter2 > 0) {
     while (addedNumber < counter2) {
       addedNumber = addedNumber + 1;
       answer = answer + counter1;
     }
+      
   }
   document.getElementById("answer").innerHTML = 
       counter1 + " x " + addedNumber + " = " + answer;
